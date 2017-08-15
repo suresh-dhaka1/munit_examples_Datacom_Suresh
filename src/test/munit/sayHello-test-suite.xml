@@ -11,8 +11,8 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
         <flow-ref name="sayHello" doc:name="Flow Reference"/>
         <munit:assert-payload-equals message="Payload does NOT contain &quot;Hello Suresh&quot;" expectedValue="#['Hello Suresh']" doc:name="Assert Payload : Validate Payload Returns &quot;Hello Suresh&quot;"/>
     </munit:test>
-    <munit:test name="sayHello-test-suite-sayHelloTest" description="Test">
+<!--     <munit:test name="sayHello-test-suite-sayHelloTest" description="Test">
         <flow-ref name="sayHello" doc:name="Flow-ref to sayHello"/>
         <munit:assert-true message="FAILED: Expected payload's datatype to be Java String but found #[payload.getClass().getName()] Instead!" condition="#[payload is java.lang.String]" doc:name="Assert True:Validate Payload's datatype as Java String"/>
-    </munit:test>
+    </munit:test> -->
 </mule>
